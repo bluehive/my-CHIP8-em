@@ -1,0 +1,20 @@
+[project]
+name = "chip8"
+version = "0.1.0"
+description = "CHIP-8 エミュレータ学習用の Python コア（ヘッドレス）"
+readme = "README.md"
+authors = [
+    { name = "蒼蜂", email = "goalwill@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+chip8 = "chip8.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
